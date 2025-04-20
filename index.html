@@ -1,157 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
   <title>Star Fish Menu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
       background-color: #0f3d3e;
-      color: #fff;
       margin: 0;
-      padding: 0;
+      font-family: sans-serif;
     }
-    header {
-      background-color: #133c47;
-      text-align: center;
+    .menu-gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
       padding: 20px;
     }
-    header img {
-      max-width: 120px;
-    }
-    h1 {
-      font-size: 2em;
-      margin-top: 10px;
-    }
-    .section {
-      padding: 20px;
-    }
-    .section h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
-      margin-bottom: 15px;
-      color: #ffe28a;
-    }
-    .menu-item {
-      margin-bottom: 15px;
-    }
-    .menu-item span {
-      display: block;
-    }
-    .menu-item .name-ar {
-      font-weight: bold;
-    }
-    .menu-item .name-en {
-      font-style: italic;
-      color: #c2e9fb;
-    }
-    footer {
-      background-color: #092d30;
-      text-align: center;
-      padding: 15px;
-      color: #ccc;
-      font-size: 0.9em;
+    .menu-gallery img {
+      max-width: 90%;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="99ee5c18-97b7-45e3-b47c-ed9034a8958d.jpg" alt="Star Fish Logo">
-    <h1>Star Fish Restaurant</h1>
-  </header>
+  <div class="menu-gallery">
+    <!-- Images from static/images -->
+    <!-- Displaying all 35 menu pages -->
+    
+    <!-- prettier-ignore -->
+    " + "\n".join([f'<img src="static/images/menu_page_{i}.jpg" alt="Menu Page {i}" />' for i in range(1, 36)]) + "
 
-  <div class="section">
-    <h2>السلطات | Salads</h2>
-    <div class="menu-item">
-      <span class="name-ar">سلطة خضراء</span>
-      <span class="name-en">Green Salad</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">سلطة سيزر مع جمبري</span>
-      <span class="name-en">Caesar Salad with Shrimp</span>
-    </div>
   </div>
-
-  <div class="section">
-    <h2>الشوربة | Soups</h2>
-    <div class="menu-item">
-      <span class="name-ar">شوربة سي فود</span>
-      <span class="name-en">Seafood Soup</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">شوربة جمبري بالكريمة</span>
-      <span class="name-en">Creamy Shrimp Soup</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>المقبلات | Appetizers</h2>
-    <div class="menu-item">
-      <span class="name-ar">كاليماري مقلي</span>
-      <span class="name-en">Fried Calamari</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">أصابع الجمبري</span>
-      <span class="name-en">Shrimp Fingers</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>المشويات | Grills</h2>
-    <div class="menu-item">
-      <span class="name-ar">جمبري مشوي</span>
-      <span class="name-en">Grilled Shrimp</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">فيليه سمك مشوي</span>
-      <span class="name-en">Grilled Fish Fillet</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>الأطباق الرئيسية | Main Courses</h2>
-    <div class="menu-item">
-      <span class="name-ar">أرز بالجمبري</span>
-      <span class="name-en">Shrimp Rice</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">طاجن سي فود</span>
-      <span class="name-en">Seafood Casserole</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>الحلويات | Desserts</h2>
-    <div class="menu-item">
-      <span class="name-ar">أم علي</span>
-      <span class="name-en">Om Ali</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">كنافة</span>
-      <span class="name-en">Kunafa</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>المشروبات | Beverages</h2>
-    <div class="menu-item">
-      <span class="name-ar">مياه معدنية</span>
-      <span class="name-en">Mineral Water</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">مشروبات غازية</span>
-      <span class="name-en">Soft Drinks</span>
-    </div>
-    <div class="menu-item">
-      <span class="name-ar">عصائر طازجة</span>
-      <span class="name-en">Fresh Juices</span>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Star Fish Restaurant. All rights reserved.
-  </footer>
 </body>
 </html>
