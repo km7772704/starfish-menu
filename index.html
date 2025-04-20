@@ -1,16 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Starfish Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Fish Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #0f3d3e;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #133c47;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 120px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 10px;
+    }
+    .section {
+      padding: 20px;
+    }
+    .section h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      color: #ffe28a;
+    }
+    .menu-item {
+      margin-bottom: 15px;
+    }
+    .menu-item span {
+      display: block;
+    }
+    .menu-item .name-ar {
+      font-weight: bold;
+    }
+    .menu-item .name-en {
+      font-style: italic;
+      color: #c2e9fb;
+    }
+    footer {
+      background-color: #092d30;
+      text-align: center;
+      padding: 15px;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Starfish Menu</h1>
-  <p>Here’s our delicious menu:</p>
-  <ul>
-    <li>Grilled Starfish</li>
-    <li>Starfish Soup</li>
-    <li>Spicy Starfish Rolls</li>
-  </ul>
+  <header>
+    <img src="99ee5c18-97b7-45e3-b47c-ed9034a8958d.jpg" alt="Star Fish Logo">
+    <h1>Star Fish Restaurant</h1>
+  </header>
+
+  <div class="section">
+    <h2>السلطات | Salads</h2>
+    <div class="menu-item">
+      <span class="name-ar">سلطة خضراء</span>
+      <span class="name-en">Green Salad</span>
+    </div>
+    <div class="menu-item">
+      <span class="name-ar">سلطة سيزر مع جمبري</span>
+      <span class="name-en">Caesar Salad with Shrimp</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>الشوربة | Soups</h2>
+    <div class="menu-item">
+      <span class="name-ar">شوربة سي فود</span>
+      <span class="name-en">Seafood Soup</span>
+    </div>
+    <div class="menu-item">
+      <span class="name-ar">شوربة جمبري بالكريمة</span>
+      <span class="name-en">Creamy Shrimp Soup</span>
+    </div>
+  </div>
+
+  <!-- More sections can go here, like Grills, Main Courses, Drinks, etc. -->
+
+  <footer>
+    &copy; 2025 Star Fish Restaurant. All rights reserved.
+  </footer>
 </body>
 </html>
+
