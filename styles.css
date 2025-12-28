@@ -1,26 +1,62 @@
-.site-header {
-  text-align: center;
-  padding: 30px 20px 10px;
+/* تحسين تنسيق الفيديو ليملأ الشاشة */
+.header {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* يجعل الفيديو يغطي كامل الشاشة */
+    overflow: hidden;
 }
 
-.site-header .logo {
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #0ff;
-  margin-bottom: 10px;
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يجعل الفيديو يغطي المساحة بأكملها */
+    z-index: -1; /* يجعل الفيديو في الخلف */
 }
 
-.neon-text {
-  font-size: 48px;
-  font-weight: bold;
-  color: #00ffff;
-  text-shadow:
-    0 0 5px #0ff,
-    0 0 10px #0ff,
-    0 0 20px #0ff,
-    0 0 40px #0ff,
-    0 0 80px #0ff;
-  font-family: 'Cairo', sans-serif;
-  text-align: center;
+/* تحسين عرض الفيديو على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .background-video {
+        object-fit: contain; /* يجعل الفيديو يظهر كاملاً في شاشة الهاتف */
+    }
+}
+
+/* باقي التنسيق كما هو */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* استجابة الشاشة */
+@media (max-width: 1024px) {
+    .gallery img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        max-width: 100%;
+    }
 }
 
